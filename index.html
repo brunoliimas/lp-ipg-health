@@ -87,31 +87,32 @@
          </div> -->
 
       <section class="slide-produtos" id="produtos">
-
          <div class="container">
-
             <div class="slide-produtos-content">
                <h2 class="slide-produtos-title">Produtos</h2>
-
-
-               <div class="slide-produtos-slider">
-                  <div class="slider-item">
-                     <img src="assets/images/img-site.png">
-                     <p>Site</p>
+               <div class="swiper swiper-produtos">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide slider-item">
+                        <img src="assets/images/img-site.png">
+                        <p>Site</p>
+                     </div>
+                     <div class="swiper-slide slider-item">
+                        <img src="assets/images/img-onepage.png">
+                        <p>One Page</p>
+                     </div>
+                     <div class="swiper-slide slider-item">
+                        <img src="assets/images/img-VA.png">
+                        <p>Visual Aid (VA)</p>
+                     </div>
+                     <div class="swiper-slide slider-item">
+                        <img src="assets/images/img-hotsite.png">
+                        <p>Hot Site</p>
+                     </div>
                   </div>
-                  <div class="slider-item">
-                     <img src="assets/images/img-onepage.png">
-                     <p>One Page</p>
-                  </div>
-                  <div class="slider-item">
-                     <img src="assets/images/img-VA.png">
-                     <p>Visual Aid (VA)</p>
-                  </div>
-                  <div class="slider-item">
-                     <img src="assets/images/img-hotsite.png">
-                     <p>Hot Site</p>
-                  </div>
+                  <div class="swiper-pagination"></div>
                </div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
             </div>
          </div>
       </section>
@@ -221,6 +222,21 @@
                delay: 250,
                disableOnInteraction: true,
             },
+         },
+      });
+      var swiper = new Swiper(".swiper-produtos", {
+         slidesPerView: 4,
+         spaceBetween: 10,
+         slidesPerGroup: 4,
+         loop: true,
+         loopFillGroupWithBlank: true,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
          },
       });
    </script>

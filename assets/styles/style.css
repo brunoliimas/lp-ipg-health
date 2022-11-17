@@ -80,6 +80,7 @@ h2::after{
     position: absolute;
     top: 50px;
     left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider-produtos-slider{
@@ -87,9 +88,22 @@ h2::after{
 }
 
 .slider-item{
-    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 60px;
+    max-height: 320px;
     background-color: #fff;
-
+}
+.slider-item img{
+    max-width: 100px;
+    width: 100%;
+}
+.slider-item p{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .blue-line{
@@ -116,6 +130,7 @@ h2::after{
 }
 
 .slide-produtos-content{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
