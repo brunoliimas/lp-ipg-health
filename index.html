@@ -6,39 +6,28 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="assets/styles/style.css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="assets/styles/style-swiper.css">
 
-   <!-- <script>
-      jQuery(document).ready(function(){
-      $('.single-item').slick({
-            dots: true,
-         });
-         $(".slide-produtos-slider").slick({
-            dots: true,
-            infinite: true,
-            autoplay: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-         });
-      });
-     </script> -->
 
-   <title>LP - IPG HEALTH</title>
+
+   <title>LP - IPG Health</title>
 </head>
 
 <body>
    <header id="header">
-      <a href="#"><img src="assets/images/logo.png" alt="Logo IPG" class="logo"></a>
-      <nav class="navigation">
-         <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#contato-tt">Contato</a></li>
-         </ul>
-      </nav>
+      <div class="container">
+         <a href="#"><img src="assets/images/logo.png" alt="Logo IPG" class="logo"></a>
+         <nav class="navigation">
+            <ul>
+               <li><a href="#sobre">Sobre</a></li>
+               <li><a href="#produtos">Produtos</a></li>
+               <li><a href="#contato">Contato</a></li>
+            </ul>
+         </nav>
+      </div>
    </header>
 
    <main>
@@ -55,36 +44,35 @@
          <div class="swiper-pagination"></div>
       </div>
 
+      <section class="sobre" id="sobre">
+         <div class="container">
+            <div class="sobre-content">
+               <h2 id="sobre">Sobre</h2>
 
-      <!-- <div class="single-item" style="width: 100%;">            
-            <img class="banner-img" src="assets/images/banner1.png">
-            <img class="banner-img" src="assets/images/banner2.png">
-        </div>        -->
+               <div class="sobre-texto">
+                  <p>
+                     <strong>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut porttitor efficitur justo, non
+                        imperdiet ex porta ut.
+                     </strong>
+                  </p>
+                  <p>Quisque lacinia, augue id fringilla elementum, est urna dapibus arcu, nec vulputate enim
+                     risus ut nulla.
+                  </p>
+                  <p>Fusce id tempus dolor. Nulla tincidunt felis fringilla, luctus lectus nec, pharetra erat.
+                  </p>
+                  <p>Nam scelerisque velit eros, a sollicitudin Leo sodales et.</p>
+               </div>
 
-      <!-- <div class="background-white">
-            
-            <div class="margin-block">
 
-               <h2 id="sobre" style="margin-bottom: 10px; color: #0079C1;">Sobre</h2>
-               <div class="blue-line"></div>
-               <span>
-                  <p><b class="font">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut porttitor efficitur justo, non imperdiet ex porta ut.
-                  </p></b>
-                     <p class="font">Quisque lacinia, augue id fringilla elementum, est urna dapibus arcu, nec vulputate enim risus ut nulla.</p>
-                     <p class="font">Fusce id tempus dolor. Nulla tincidunt felis fringilla, luctus lectus nec, pharetra erat.</p>
-                     <p class="font">Nam scelerisque velit eros, a sollicitudin Leo sodales et.</p>
-               </span>
-
-               <div class="scrollmenu menu-images">            
+               <div class="sobre-images">
                   <img src="assets/images/img1.png">
                   <img src="assets/images/img2.png">
                   <img src="assets/images/img3.png">
                </div>
-
             </div>
-
-         </div> -->
+         </div>
+      </section>
 
       <section class="slide-produtos" id="produtos">
          <div class="container">
@@ -117,97 +105,102 @@
          </div>
       </section>
 
-      <!-- <div class="background-white2">
-            
-            <div class="margin-block3">
 
-               <h2 class="projetos-texto">Projetos Especiais</h2>
-               <div class="blue-line2"></div>
-               <span>
-                  <p><b class="font2">
-                     Fusce id tempus dolor. Nulla tincidunt felis fringilla, luctus lectus nec, pharetra erat.<br>
-                     Nam scelerisque velit eros, a sollicitudin Leo sodales et.
-                  </p></b>  
-                  <button class="btn"><a href="#" target="_blank">BUTTON</a></button>
-                  <img class="img-bg" src="assets/images/bg-projetos.png">                                 
-               </span>
+      <section class="projetos" id="projetos">
+         <div class="container">
+            <h2 class="projetos-title">Projetos Especiais</h2>
+            <div class="projetos-content">
+               <p class="projetos-texto">
+                  Fusce id tempus dolor. Nulla tincidunt felis fringilla, luctus lectus nec, pharetra erat.
+                  Nam scelerisque velit eros, a sollicitudin Leo sodales et.
+               </p>
+               <button><a href="#" target="_blank">Button</a></button>
             </div>
-         </div> -->
-      <div>
-         <h2 id="contato-tt">Contato</h2>
-         <div class="blue-line3"></div>
-         <form action="#" method="post">
-            <div class="left">
-               <label for="nome">Nome:</label>
-               <input type="text" placeholder="Digite o nome completo" id="nome" />
-            </div>
-            <div class="right">
-               <label for="nome">E-mail:</label>
-               <input type="email" placeholder="Digite seu e-mail" id="e-mail" />
-            </div>
-            <div class="left">
-               <label for="nome">Telefone:</label>
-               <input type="tel" placeholder="(00) 00000-0000" id="telefone" />
-            </div>
-            <div class="right">
-               <label for="email">Estado:</label>
-               <select id="UF">
-                  <option id="UF" value="Selecione o Estado">Selecione o Estado</option>
-                  <option value="AC">Acre</option>
-                  <option value="AL">Alagoas</option>
-                  <option value="AP">Amapá</option>
-                  <option value="AM">Amazonas</option>
-                  <option value="BA">Bahia</option>
-                  <option value="CE">Ceará</option>
-                  <option value="DF">Distrito Federal</option>
-                  <option value="ES">Espirito Santo</option>
-                  <option value="GO">Goiás</option>
-                  <option value="MA">Maranhão</option>
-                  <option value="MS">Mato Grosso do Sul</option>
-                  <option value="MT">Mato Grosso</option>
-                  <option value="MG">Minas Gerais</option>
-                  <option value="PA">Pará</option>
-                  <option value="PB">Paraíba</option>
-                  <option value="PR">Paraná</option>
-                  <option value="PE">Pernambuco</option>
-                  <option value="PI">Piauí</option>
-                  <option value="RJ">Rio de Janeiro</option>
-                  <option value="RN">Rio Grande do Norte</option>
-                  <option value="RS">Rio Grande do Sul</option>
-                  <option value="RO">Rondônia</option>
-                  <option value="RR">Roraima</option>
-                  <option value="SC">Santa Catarina</option>
-                  <option value="SP">São Paulo</option>
-                  <option value="SE">Sergipe</option>
-                  <option value="TO">Tocantins</option>
-               </select>
-            </div>
-            <div id="mensagem">
-               <label for="msg">Mensagem:</label>
-               <textarea placeholder="Digite sua mensagem" id="msg"></textarea>
-            </div>
-            <button class="btn2" target="_blank">ENVIAR</button>
-            <div class="clear"></div>
-         </form>
-      </div>
+         </div>
+      </section>
 
-      <div class="footer">
-         <div class="logo-footer">
-            <a href="#"><img src="assets/images/ipg-health-logo-positive.png" alt="Logo footer"></a>
-         </div>
-         <div class="site-footer">
-            <a href="mailto:newbusiness@ipghealth.com">
-               <p id="site">newbusiness@ipghealth.com</p>
-            </a>
-         </div>
-         <div class="redes">
-            <img src="assets/images/redes-sociais.png" alt="Redes sociais">
-         </div>
-      </div>
 
-      <div>
-         <p id="registrado">© IPG Health, LLC 2022</p>
-      </div>
+      <section class="contato" id="contato">
+         <div class="container">
+            <h2 class="contato-title">Contato</h2>
+            <form action="#" method="submit">
+               <div class="contato-form">
+                  <div class="contato-item">
+                     <label for="nome">Nome:</label>
+                     <input type="text" placeholder="Digite o nome completo" id="nome" />
+                  </div>
+                  <div class="contato-item">
+                     <label for="nome">E-mail:</label>
+                     <input type="email" placeholder="Digite seu e-mail" id="e-mail" />
+                  </div>
+                  <div class="contato-item">
+                     <label for="nome">Telefone:</label>
+                     <input type="tel" placeholder="(00) 00000-0000" id="telefone" />
+                  </div>
+                  <div class="contato-item">
+                     <label for="email">Estado:</label>
+                     <select id="UF">
+                        <option id="UF" value="Selecione o Estado">Selecione o Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                     </select>
+                  </div>
+                  <div class="mensagem">
+                     <label for="msg">Mensagem:</label>
+                     <textarea class="contato-item" placeholder="Digite sua mensagem" id="msg"></textarea>
+                  </div>
+               </div>
+               <button class="contato-button" target="_blank">Enviar</button>
+            </form>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer-nav">
+               <a href="/">
+                  <img src="assets/images/ipg-health-logo-positive.png" alt="">
+               </a>
+               <a href="mailto:newbusiness@ipghealth.com">newbusiness@ipghealth.com</a>
+               <div class="footer-social">
+                  <a href="https://www.linkedin.com/company/ipg-health/"><span class="uil uil-linkedin"></span></a>
+                  <a href="https://twitter.com/IPGHealth"><span class="uil uil-twitter"></span></a>
+                  <a href="https://www.facebook.com/ipghealth"><span class="uil uil-facebook-f"></span></a>
+                  <a href="https://www.instagram.com/ipghealth/"><span class="uil uil-instagram"></span></a>
+               </div>
+            </div>
+            <div class="footer-credencial">
+               <p id="registrado">© IPG Health, LLC 2022</p>
+            </div>
+         </div>
+      </footer>
+
+
 
       <!-- <script src="banner.js"></script> -->
    </main>
@@ -238,6 +231,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
          },
+
       });
    </script>
 </body>
